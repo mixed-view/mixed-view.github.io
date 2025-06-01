@@ -76,6 +76,10 @@
               <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
             </div>
 
+            <div class="is-size-5 publication-authors" style="margin-top: 10px;">
+              <span class="author-block"><b>Transactions on Machine Learning Research(TMLR), 2025</b></span>
+            </div>
+
             <div class="column has-text-centered">
               <div class="publication-links">
                    <!-- Arxiv PDF link -->
@@ -238,10 +242,11 @@
   </div>
 </section>
 
+
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/img/framework_base_ECCV1.jpg" alt="Overall framework"/>
+      <img src="static/img/framework_base_tmlr1.jpg" alt="Overall framework"/>
         <h2 class="subtitle has-text-centered">
           Overview of our mixed-view panorama synthesis framework. 
           The model takes as input a satellite image and a set of nearby panoramas, 
@@ -256,8 +261,9 @@
     <div class="hero-body">
       <img src="static/img/local_attention_ECCV.jpg" alt="Local attention details"/>
         <h2 class="subtitle has-text-centered">
-          Detailed architecture of the local attention module. 
-          We use cross-attention to extract relevant features from nearby panoramas based on their spatial relationship to the target location.
+          Visualization of local geospatial attention. 
+          The target location is represented by a green square in the satellite image. 
+          The nearby street-level panoramas (color-coded borders) are represented by same-colored circles in the satellite image.
         </h2>
     </div>
   </div>
@@ -268,8 +274,9 @@
     <div class="hero-body">
       <img src="static/img/global_att.jpg" alt="Global attention mechanism"/>
         <h2 class="subtitle has-text-centered">
-          The global attention mechanism processes satellite imagery to extract overhead spatial context. 
-          This provides crucial information about the layout and structure of the environment.
+          Visualization of global geospatial attention. 
+          The color-coded attention maps for two target locations are shown, corresponding to the same-colored dots in the satellite image. 
+          Darker colors represent more salient regions.
         </h2>
     </div>
   </div>
@@ -325,24 +332,14 @@
         </div>
       </div>
       <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
-        Comparison with baseline methods. Our mixed-view approach generates more realistic panoramas by leveraging both satellite imagery and nearby ground-level views, 
-        while baseline methods using only satellite imagery struggle to capture fine-grained details.
+        Comparison with baseline methods. The cross-view synthesis methods that we compare with are trained on our collected center-aligned satellite images. 
+        Our approach, which integrates nearby street-level panoramas, not only generates more realistic results when compared to baselines, but more accurate results both semantically and geometrically when compared to the ground truth.
       </h2>
     </div>
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/img/framework_base_tmlr1.jpg" alt="Additional results"/>
-        <h2 class="subtitle has-text-centered">
-          Additional qualitative results demonstrating the effectiveness of our approach across various urban and rural environments.
-          Our method successfully synthesizes panoramas that are consistent with both the overhead satellite view and nearby ground-level observations.
-        </h2>
-    </div>
-  </div>
-</section>
+
 
 
 <!-- Video carousel -->
