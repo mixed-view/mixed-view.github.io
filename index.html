@@ -5,7 +5,7 @@
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="Mixed-View Panorama Synthesis: A novel approach for synthesizing panoramas using both satellite imagery and ground-level panoramas">
-  <meta property="og:title" content="Mixed-View Panorama Synthesis"/>
+  <meta property="og:title" content="Mixed-View Panorama Synthesis using Geospatially Guided Diffusion"/>
   <meta property="og:description" content="Synthesizing novel panoramas by combining satellite imagery and ground-level panoramas using diffusion-based modeling"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
@@ -14,7 +14,7 @@
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="Mixed-View Panorama Synthesis">
+  <meta name="twitter:title" content="Mixed-View Panorama Synthesis using Geospatially Guided Diffusion">
   <meta name="twitter:description" content="A novel approach for synthesizing panoramas using both satellite imagery and ground-level panoramas">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/img/simple_framework8.jpg">
@@ -181,16 +181,8 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3" style="text-align: center;">Main Results</h2>
+      <h2 class="title is-3" style="text-align: center;">Methods</h2>
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <img src="static/img/ablation_new_ECCV.jpg" alt="Ablation study results"/>
-        <h2 class="subtitle has-text-centered">
-          Ablation study showing the effectiveness of different components in our mixed-view panorama synthesis approach. 
-          Our method effectively combines information from both satellite imagery and ground-level panoramas to generate realistic novel views.
-        </h2>
-      </div>
-
       <div class="item">
         <!-- Your image here -->
         <img src="static/img/local_attention_ECCV_3.6.jpg" alt="Local attention mechanism"/>
@@ -339,7 +331,37 @@
   </div>
 </section>
 
+<!-- Experimental Results -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experimental Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            We evaluate our approach on diverse locations worldwide, demonstrating its ability to synthesize realistic panoramas 
+            even when input panoramas are sparse or distant from the target location. Our method significantly outperforms 
+            baseline approaches that use only satellite imagery or only ground-level panoramas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- Ablation Study -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3" style="text-align: center;">Ablation Study</h2>
+      <img src="static/img/ablation_new_ECCV.jpg" alt="Ablation study results"/>
+      <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+        Ablation study showing the effectiveness of different components in our mixed-view panorama synthesis approach. 
+        Our method effectively combines information from both satellite imagery and ground-level panoramas to generate realistic novel views.
+      </h2>
+    </div>
+  </div>
+</section>
 
 
 <!-- Video carousel -->
